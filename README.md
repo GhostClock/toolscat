@@ -32,4 +32,7 @@ npm i -D unplugin-auto-import
 
 ### 配置项目内组件 & API 的自动引入
 
+### 安装 VueUse
+安装 npm i @vueuse/core
+
 
