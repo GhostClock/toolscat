@@ -35,4 +35,8 @@ npm i -D unplugin-auto-import
 ### 安装 VueUse
 安装 npm i @vueuse/core
 
+### 配置 SVGIcon
+安装 npm i -D --save unplugin-icons
 
+预览到图标
+安装 VSCode 插件 Iconify IntelliSense

@@ -7,7 +7,16 @@
     <a-button type="primary" size="large">Large</a-button>
   </a-space>
 
+  <!-- 组件 -->
   <HelloWorld />
+
+  <!-- SVG -->
+  <icon-ion-accessibility class="size"/>
+  <icon-mdi-account-child-outline class="size" />
+  <!-- 自定义SVG -->
+  <icon-home-alarm class="size" />
+  <icon-home-solar class="size" />
+
 </template>
 <script setup>
 const handleClickMini = () => {
@@ -15,4 +24,8 @@ const handleClickMini = () => {
 }
 </script>
 <style lang="less" scoped>
+.size {
+  width: 50px;
+  height: 50px;
+}
 </style>
