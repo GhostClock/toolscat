@@ -55,3 +55,10 @@ unocss 核心插件
 
 安装 VSCode 插件 UnoCSS
 
+### 其他 Vite 配置
+环境配置
+启动配置
+model配置
+
+
+
