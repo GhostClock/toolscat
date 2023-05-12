@@ -2,6 +2,12 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
+// 导入normalize.css
+import("normalize.css") 
+
+// 导入Unocss样式 
+import 'uno.css' 
+
 import App from './App.vue'
 import router from './router'
 

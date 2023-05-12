@@ -40,3 +40,18 @@ npm i -D unplugin-auto-import
 
 预览到图标
 安装 VSCode 插件 Iconify IntelliSense
+
+### Styles公共样式管理、初始化样式
+安装 npm i -D --save  normalize.css
+main.js 引入 import('normalize.css') 
+
+### 配置UnoCSS -- 原子化CSS
+安装： npm install -D --save unocss @unocss/preset-uno @unocss/preset-attributify @unocss/transformer-directives
+
+unocss 核心插件
+@unocss/preset-uno 默认预设，Tailwind / WindiCSS 等超集
+@unocss/preset-attributify 属性预设，为其他预设和规则提供属性模式，下面会介绍
+@unocss/transformer-directives  指令转换器插件，允许使用 @apply指令在 style 中写原子化 css
+
+安装 VSCode 插件 UnoCSS
+
