@@ -12,11 +12,40 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
+      // 需要去解析的文件
+      include: [
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.vue$/,
+        /\.vue\?vue/, // .vue
+        /\.md$/ // .md
+      ],
+      // imports 指定自动引入的包位置（名）
+      imports: ['vue', 'pinia', 'vue-router'],
+      // 生成相应的自动导入json文件。
+      eslintrc: {
+        // 启用
+        enabled: true,
+        // 生成自动导入json文件位置
+        filepath: './.eslintrc-auto-import.json',
+        // 全局属性值
+        globalsPropValue: true
+      },
       resolvers: [
         ArcoResolver(), // 插件内置的解析器
-      ] 
+      ]
     }),
     Components({
+      // imports 指定组件所在目录，默认为 src/components
+      dirs: [
+        'src/components/',
+        'src/views/'
+      ],
+      // 需要去解析的文件
+      include: [
+        /\.vue$/,
+        /\.vue\?vue/,
+        /\.md$/
+      ],
       resolvers: [
         ArcoResolver({
           sideEffect: true

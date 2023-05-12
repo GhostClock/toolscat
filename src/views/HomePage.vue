@@ -6,6 +6,8 @@
     <a-button type="primary">Medium</a-button>
     <a-button type="primary" size="large">Large</a-button>
   </a-space>
+
+  <HelloWorld />
 </template>
 <script setup>
 const handleClickMini = () => {
