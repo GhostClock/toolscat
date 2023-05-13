@@ -5,8 +5,19 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('@/views/HomePage.vue')
+      name: 'Layout',
+      component: () => import('@/layout/SwitchIndex.vue'),
+      redirect: '/',
+      children: [
+        {
+          path: '/',
+          name: 'HomePage',
+          meta: {
+            title: 'TOOLS CAT',
+          },
+          component: () => import('@/views/HomePage.vue')
+        }
+      ]
     },
   ]
 })
