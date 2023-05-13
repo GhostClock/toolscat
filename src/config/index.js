@@ -23,6 +23,14 @@ const configSource = {
     serverUrl: ENV.VITE_BASE_SERVER_URL,
     // 项目github地址
     github: 'https://github.com/GhostClock/toolscat',
+    // 个人信息
+    me: {
+        name: "GhostClock",
+        zhihu: 'https://www.zhihu.com/people/GhostClock',
+        github: 'https://github.com/GhostClock',
+        avatar: "https://avatars.githubusercontent.com/u/10014166?v=4",
+        icp: '粤ICP备2023XXXXXXXX号'
+    }
 }
 
 // 设置全局配置

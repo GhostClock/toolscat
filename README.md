@@ -74,3 +74,6 @@ model配置
 
 ### 菜单组件 Menu
 
+### 页尾组件 Footer
+
+
