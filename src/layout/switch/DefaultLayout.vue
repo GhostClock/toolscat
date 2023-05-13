@@ -12,7 +12,9 @@
               <!-- center插槽 -->
               <template #center></template>
               <!-- right插槽 -->
-              <template #right></template>
+              <template #right>
+                <Github />
+              </template>
             </Navbar>
           </a-layout-header>
         </a-affix>

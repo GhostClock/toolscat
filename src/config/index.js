@@ -20,7 +20,9 @@ const configSource = {
     // 模拟数据接口路径
     mockBaseUrl: ENV.VITE_BASE_MOCK_URL,
     // 服务端接口路径
-    serverUrl: ENV.VITE_BASE_SERVER_URL
+    serverUrl: ENV.VITE_BASE_SERVER_URL,
+    // 项目github地址
+    github: 'https://github.com/GhostClock/toolscat',
 }
 
 // 设置全局配置
