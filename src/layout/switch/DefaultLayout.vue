@@ -10,7 +10,9 @@
                 <Logo />
               </template>
               <!-- center插槽 -->
-              <template #center></template>
+              <template #center>
+                <Menu />
+              </template>
               <!-- right插槽 -->
               <template #right>
                 <Github />
