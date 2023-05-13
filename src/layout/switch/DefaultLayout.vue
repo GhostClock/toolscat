@@ -3,7 +3,18 @@
     <div class="default-layout">
       <a-layout>
         <a-affix>
-          <a-layout-header>Navbar</a-layout-header>
+          <a-layout-header>
+            <Navbar>
+              <!-- left插槽 -->
+              <template #left>
+                <Logo />
+              </template>
+              <!-- center插槽 -->
+              <template #center></template>
+              <!-- right插槽 -->
+              <template #right></template>
+            </Navbar>
+          </a-layout-header>
         </a-affix>
 
         <a-layout-content>
@@ -25,12 +36,12 @@
 @apply .default-layout :deep(.arco-layout-header),
 .default-layout :deep(.arco-layout-footer),
 .default-layout :deep(.arco-layout-content) {
-    @apply text-[var(--color-text-1)] text-14px;
+  @apply text-[var(--color-text-1)] text-14px;
 }
 
 .default-layout :deep(.arco-layout-header) {
-    @apply w-full h-58px overflow-hidden;
-    @apply bg-[var(--color-bg-3)] border-b-[var(--color-border-1)] border-b-solid border-b-width-1px box-border;
+  @apply w-full h-58px overflow-hidden;
+  @apply bg-[var(--color-bg-3)] border-b-[var(--color-border-1)] border-b-solid border-b-width-1px box-border;
 }
 
 .default-layout :deep(.arco-layout-content) {
@@ -43,5 +54,4 @@
   @apply border-t-[var(--color-border-1)] border-t-solid border-t-width-1px box-border;
   @apply bg-[var(--color-bg-2)] text-[var(--color-text-1)] text-14px;
 }
-
 </style>

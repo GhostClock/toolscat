@@ -19,6 +19,7 @@
     "@arco-design/web-vue": "^2.46.0",
     "@iconify-json/ion": "^1.1.10",
     "@iconify-json/mdi": "^1.1.51",
+    "@iconify-json/ri": "^1.1.8",
     "@rushstack/eslint-patch": "^1.2.0",
     "@unocss/preset-attributify": "^0.51.12",
     "@unocss/preset-uno": "^0.51.12",
