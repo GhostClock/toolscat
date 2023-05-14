@@ -1,6 +1,7 @@
 <template>
     <div class="switch-index">
-        <DefaultLayout />
+        <!-- <DefaultLayout /> -->
+        <SidebarLayout />
     </div>
 </template>
 
