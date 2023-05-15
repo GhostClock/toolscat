@@ -85,3 +85,5 @@ model配置
 ### 动态切换布局
 
 ### Pinia 共享布局状态
+
+### 切换布局组件SwitchLayout

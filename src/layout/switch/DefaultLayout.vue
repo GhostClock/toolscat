@@ -15,6 +15,7 @@
               </template>
               <!-- right插槽 -->
               <template #right>
+                <SwitchLayout />
                 <Github />
               </template>
             </Navbar>
@@ -34,6 +35,15 @@
     </div>
   </div>
 </template>
+
+<script>
+import IconRiLayoutTopFill from '~icons/ri/layout-top-fill'
+export default {
+  name: 'DefaultLayout',
+  icon: IconRiLayoutTopFill,
+  title: '默认布局'
+}
+</script>
 
 <script setup>
 </script>

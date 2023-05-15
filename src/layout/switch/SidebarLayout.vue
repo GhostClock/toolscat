@@ -8,6 +8,7 @@
               <Logo />
             </template>
             <template #right>
+              <SwitchLayout />
               <Github />
             </template>
           </Navbar>

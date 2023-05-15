@@ -1,6 +1,6 @@
 <template>
     <div class="switch-index">
-        <component :is="systemStore.initSwitchLayout" />
+        <component :is="systemStore.currentSwitchlayout" />
     </div>
 </template>
 
@@ -11,6 +11,7 @@ import { useSystemStore } from '@/stores/system'
 
 const systemStore = useSystemStore()
 
+// 默认布局初始化
 systemStore.initSwitchLayout(switchLayoutList)
 
 </script>

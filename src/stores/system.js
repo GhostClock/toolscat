@@ -3,7 +3,7 @@
 
 export const useSystemStore = defineStore('system', () => {
     // 当前可切换布局
-    const currentSwitchLayout = shallowRef(null)
+    const currentSwitchlayout = shallowRef(null)
     // 可切换布局
     const switchLayoutList = shallowRef([])
     
@@ -11,14 +11,13 @@ export const useSystemStore = defineStore('system', () => {
     const initSwitchLayout = list => {
         if (list && list.length > 0) {
             switchLayoutList.value = [...list]
-            if (!currentSwitchLayout.value) {
-                currentSwitchLayout.value = switchLayoutList.value[0]
+            if (!currentSwitchlayout.value) {
+                currentSwitchlayout.value = switchLayoutList.value[0]
             }
         }
     }
-
     return {
-        currentSwitchLayout, 
+        currentSwitchlayout, 
         switchLayoutList,
         initSwitchLayout
     }
