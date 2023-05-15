@@ -24,7 +24,7 @@
             :collapsed="collapsed"
             @collapse="handleCollapse"
           >
-            Menu
+            <Menu mode="vertical"/>
           </a-layout-sider>
         </a-affix>
       </a-layout>
